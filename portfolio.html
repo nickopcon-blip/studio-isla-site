@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Studio Isla</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#faf8f0;--ink:#1f1d1a;--serif:'EB Garamond',Georgia,'Times New Roman',serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block;height:auto}
+  a{color:inherit;text-decoration:none}
+  header{display:flex;align-items:baseline;justify-content:space-between;padding:2.6rem clamp(1.4rem,5vw,4.6rem) 1.4rem}
+  .wordmark{font-size:1.02rem;letter-spacing:.42em;font-weight:500;white-space:nowrap}
+  nav{display:flex;gap:1.7rem;flex-wrap:wrap;justify-content:flex-end}
+  nav a{font-size:.83rem;letter-spacing:.02em;font-weight:400}
+  nav a:hover,nav a.current{text-decoration:underline;text-underline-offset:3px}
+  .tiles{max-width:1460px;margin:0 auto;padding:3rem clamp(1.4rem,5vw,4.6rem) 5rem;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:5.5rem clamp(2.5rem,6vw,6rem)}
+  .tiles figure{margin:0}
+  .tiles figure.dn{padding-top:2.6rem}
+  .tiles figcaption{margin-top:.8rem;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase}
+  @media(max-width:1000px){.tiles{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.tiles{grid-template-columns:1fr;gap:3rem}.tiles figure.dn{padding-top:0}}
+  footer{padding:3.2rem 1.5rem 3.4rem;text-align:center}
+  footer .links{font-size:.85rem;letter-spacing:.04em}
+  footer .links a:hover{text-decoration:underline;text-underline-offset:3px}
+  footer .links span{margin:0 .55rem}
+  footer .note{margin-top:1rem;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:#a7a091}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="wordmark" href="index.html">STUDIO ISLA</a>
+  <nav>
+    <a class="current" href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="writing.html">Writing</a>
+    <a href="about.html">About</a>
+    <a href="index.html">Overview</a>
+  </nav>
+</header>
+
+<main class="tiles">
+  <figure><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/e9717030-e923-496e-8339-3447a8c03a63/DSC04646.jpg?format=500w" alt="Studio Isla portfolio" loading="eager"><figcaption>Interiors</figcaption></figure>
+  <figure class="dn"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/9db71771-a51c-4878-8f53-fb5f2730f784/000044110035+copy+2.jpg?format=500w" alt="Studio Isla portfolio" loading="eager"><figcaption>Still life</figcaption></figure>
+  <figure><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/ec09b827-e350-4de4-b1d4-2978522818e7/DSC04870+copy.jpg?format=500w" alt="Studio Isla portfolio" loading="eager"><figcaption>Details</figcaption></figure>
+  <figure class="dn"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/1bad45e4-3aa0-44be-8129-4bd81d526780/DSC04882+copy.jpg?format=500w" alt="Studio Isla portfolio" loading="eager"><figcaption>Tablescapes</figcaption></figure>
+  <figure class="dn"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/d703a39e-65b1-4d8b-b09a-9fbd49fa9daa/000001020012+copy.jpg?format=500w" alt="Studio Isla portfolio" loading="lazy"><figcaption>On film</figcaption></figure>
+  <figure><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/a91e550f-bf6a-4546-a51a-b341cd0b8ee5/000001020013+copy+2.jpg?format=500w" alt="Studio Isla portfolio" loading="lazy"><figcaption>Textiles</figcaption></figure>
+  <figure class="dn"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/e04be68e-667d-4e62-ab97-1f444da9920e/000001020019+copy.jpg?format=500w" alt="Studio Isla portfolio" loading="lazy"><figcaption>Outdoor living</figcaption></figure>
+  <figure><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/0b8a3fd6-b3b4-4023-bffe-ec3a588a2c80/000001020028+copy+2.jpg?format=500w" alt="Studio Isla portfolio" loading="lazy"><figcaption>Studio</figcaption></figure>
+</main>
+
+<footer>
+  <p class="links">
+    <a href="mailto:isabelle@thestudioisla.co">isabelle@thestudioisla.co</a><span>|</span><a href="https://www.instagram.com/thestudioisla/" target="_blank" rel="noopener">instagram</a>
+  </p>
+  <p class="note">Site concept &mdash; hosted on GitHub Pages</p>
+</footer>
+
+</body>
+</html>
