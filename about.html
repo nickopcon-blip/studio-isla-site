@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Studio Isla</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#faf8f0;--ink:#1f1d1a;--serif:'EB Garamond',Georgia,'Times New Roman',serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block;height:auto}
+  a{color:inherit;text-decoration:none}
+  header{display:flex;align-items:baseline;justify-content:space-between;padding:2.6rem clamp(1.4rem,5vw,4.6rem) 1.4rem}
+  .wordmark{font-size:1.02rem;letter-spacing:.42em;font-weight:500;white-space:nowrap}
+  nav{display:flex;gap:1.7rem;flex-wrap:wrap;justify-content:flex-end}
+  nav a{font-size:.83rem;letter-spacing:.02em;font-weight:400}
+  nav a:hover,nav a.current{text-decoration:underline;text-underline-offset:3px}
+  main{max-width:1460px;margin:0 auto;padding:7rem clamp(1.4rem,5vw,4.6rem) 6rem;
+    display:grid;grid-template-columns:minmax(0,30rem) 1fr;gap:4rem}
+  .bio p{font-size:.98rem;line-height:1.7;margin-bottom:1.4rem;max-width:32rem}
+  .bio a{text-decoration:underline;text-underline-offset:3px}
+  .photo{justify-self:end;width:min(390px,100%)}
+  @media(max-width:860px){main{grid-template-columns:1fr;padding-top:3.5rem}.photo{justify-self:start}}
+  footer{padding:3.2rem 1.5rem 3.4rem;text-align:center}
+  footer .links{font-size:.85rem;letter-spacing:.04em}
+  footer .links a:hover{text-decoration:underline;text-underline-offset:3px}
+  footer .links span{margin:0 .55rem}
+  footer .note{margin-top:1rem;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:#a7a091}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="wordmark" href="index.html">STUDIO ISLA</a>
+  <nav>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="writing.html">Writing</a>
+    <a class="current" href="about.html">About</a>
+    <a href="index.html">Overview</a>
+  </nav>
+</header>
+
+<main>
+  <div class="bio">
+    <p>Studio Isla is a full-service Southern California marketing agency, focused on digital strategy in the design space. We work alongside interior designers to bring their vision to life &mdash; elevating the aesthetic while staying true to the brand&rsquo;s roots, with intention behind every decision.</p>
+    <p>For inquiries, collaborations and any questions, please reach out to:</p>
+    <p><a href="mailto:isabelle@thestudioisla.co">isabelle@thestudioisla.co</a></p>
+  </div>
+  <figure class="photo">
+    <img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/9ad1dc73-79dc-4744-a4d2-406807d79d2f/Studio-Isla-About.jpg?format=750w" alt="Studio Isla" loading="eager">
+  </figure>
+</main>
+
+<footer>
+  <p class="links">
+    <a href="mailto:isabelle@thestudioisla.co">isabelle@thestudioisla.co</a><span>|</span><a href="https://www.instagram.com/thestudioisla/" target="_blank" rel="noopener">instagram</a>
+  </p>
+  <p class="note">Site concept &mdash; hosted on GitHub Pages</p>
+</footer>
+
+</body>
+</html>
