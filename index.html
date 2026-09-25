@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Isla — Site Concept</title>
+<meta name="description" content="Studio Isla — marketing for the design space. Site concept.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf8f0;
+    --ink:#1f1d1a;
+    --serif:'EB Garamond',Georgia,'Times New Roman',serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:var(--serif);-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block;height:auto}
+  a{color:inherit;text-decoration:none}
+
+  /* header — name small top-left, small nav top-right */
+  header{display:flex;align-items:baseline;justify-content:space-between;
+    padding:2.6rem clamp(1.4rem,5vw,4.6rem) 1.4rem}
+  .wordmark{font-size:1.02rem;letter-spacing:.42em;font-weight:500;white-space:nowrap}
+  nav{display:flex;gap:1.7rem;flex-wrap:wrap;justify-content:flex-end}
+  nav a{font-size:.83rem;letter-spacing:.02em;font-weight:400}
+  nav a:hover{text-decoration:underline;text-underline-offset:3px}
+  nav a.current{text-decoration:underline;text-underline-offset:3px}
+
+  /* sparse staggered grid — small images, generous whitespace */
+  .board{max-width:1460px;margin:0 auto;
+    padding:2.6rem clamp(1.4rem,5vw,4.6rem) 4rem;
+    display:grid;grid-template-columns:repeat(4,1fr);column-gap:clamp(2.5rem,7.5vw,7.2rem)}
+  .col{display:flex;flex-direction:column}
+  .col figure{margin:0}
+  .col figure.sm{width:82%}
+  .col figure.md{width:92%}
+  .col figure.right{align-self:flex-end}
+  @media(max-width:1000px){
+    .board{grid-template-columns:repeat(2,1fr);column-gap:clamp(2rem,6vw,4rem)}
+    .c3,.c4{display:none}
+    .board .col.c1 figure,.board .col.c2 figure{margin-bottom:4.5rem !important}
+  }
+  @media(max-width:560px){
+    .board{grid-template-columns:1fr}
+    .c2{display:none}
+    .board .col.c1 figure{width:100%;margin-bottom:3rem !important}
+  }
+
+  footer{padding:3.2rem 1.5rem 3.4rem;text-align:center}
+  footer .links{font-size:.85rem;letter-spacing:.04em}
+  footer .links a:hover{text-decoration:underline;text-underline-offset:3px}
+  footer .links span{margin:0 .55rem}
+  footer .note{margin-top:1rem;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:#a7a091}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="wordmark" href="index.html">STUDIO ISLA</a>
+  <nav>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="writing.html">Writing</a>
+    <a href="about.html">About</a>
+    <a class="current" href="index.html">Overview</a>
+  </nav>
+</header>
+
+<main class="board">
+  <div class="col c1">
+    <figure style="margin-bottom:7.5rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/a26c33ad-00c1-4afe-bdb5-f0fc22f20c01/000045030003.jpg?format=500w" alt="Studio Isla photography" loading="eager"></figure>
+    <figure class="sm" style="margin-bottom:8.5rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/e71e3b9a-036d-45f8-bab8-8ee4332a9ccd/DSC04395.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure class="md" style="margin-bottom:7rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/0fa6ec7a-f75e-4662-b6d2-99395d90ccc4/DSC04645+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure class="sm right" style="margin-bottom:8rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/d73b67bb-6d56-4d02-b050-7a1c9c051bf5/000045030006.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure style="margin-bottom:0"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/b6a17cee-3959-46e2-bb3d-18d267c2d873/000001020008+copy+2.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+  </div>
+
+  <div class="col c2">
+    <figure class="md" style="margin-top:1.5rem;margin-bottom:9rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/06ccc798-39fb-417f-a3d3-f9618282d6ba/000045030008+copy.jpg?format=500w" alt="Studio Isla photography" loading="eager"></figure>
+    <figure class="sm" style="margin-bottom:7.5rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/96dcb26a-599a-40de-aed1-abeafaa795d2/DSC04654+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure style="margin-bottom:8.5rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/caa033df-1918-4c5c-ad6b-5125803f327e/000072250004-1+%28dragged%29+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure class="md right" style="margin-bottom:0"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/0313abfd-5be9-472b-8aaf-4f46e9719ff7/DSC05002+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+  </div>
+
+  <div class="col c3">
+    <figure class="sm" style="margin-bottom:8rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/ab1d2369-01e7-4475-aad8-f684ec7cef6f/000045030017+copy.jpg?format=500w" alt="Studio Isla photography" loading="eager"></figure>
+    <figure style="margin-bottom:7rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/dfb5c5b7-4c14-4d0b-a046-c822210b9ab7/000045030002.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure class="md right" style="margin-bottom:9rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/a642e0e6-ff78-47e9-822d-3cddadb01a1e/000072250005-1+%28dragged%29+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure class="sm" style="margin-bottom:0"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/c08cb9f8-65a9-411c-b830-a34e82c467a8/DSC04683+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+  </div>
+
+  <div class="col c4">
+    <figure style="margin-bottom:9.5rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/1d5f4a0f-081b-4092-87e5-1fed97a3fddc/DSC04634.jpg?format=500w" alt="Studio Isla photography" loading="eager"></figure>
+    <figure class="sm" style="margin-bottom:7.5rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/5f989810-c531-4f7c-a680-1c9f7f180371/000072250010-1+%28dragged%29+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure class="md" style="margin-bottom:8rem"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/c3260d46-784c-4781-9a16-7eb21be3da32/DSC04767+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+    <figure class="sm right" style="margin-bottom:0"><img src="https://images.squarespace-cdn.com/content/v1/64eb449a3a4fde66c991bf2f/5fa7eb08-1ebc-4328-8674-54faf26bbf5f/DSC04863+copy.jpg?format=500w" alt="Studio Isla photography" loading="lazy"></figure>
+  </div>
+</main>
+
+<footer>
+  <p class="links">
+    <a href="mailto:isabelle@thestudioisla.co">isabelle@thestudioisla.co</a><span>|</span><a href="https://www.instagram.com/thestudioisla/" target="_blank" rel="noopener">instagram</a>
+  </p>
+  <p class="note">Site concept &mdash; hosted on GitHub Pages</p>
+</footer>
+
+</body>
+</html>
